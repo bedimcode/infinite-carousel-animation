@@ -1,0 +1,43 @@
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px){
+   .carousel__card{
+      width: 250px;
+      padding-bottom: 2rem;
+   }
+}
+
+/* For large devices */
+@media screen and (min-width: 1150px){
+   .carousel{
+      margin-inline: auto;
+      row-gap: 3rem;
+
+      &::before,
+      &::after{
+         content: '';
+         position: absolute;
+         top: 0;
+         width: 20%;
+         height: 100%;
+         z-index: 1;
+      }
+      &::before{
+         right: 0;
+         background: linear-gradient(90deg,
+                     hsla(220, 24%, 94%, 0) 0%,
+                     var(--body-color) 100%);
+      }
+      &::after{
+         left: 0;
+         background: linear-gradient(90deg, 
+                     var(--body-color) 0%,
+                     hsla(220, 24%, 94%, 0) 100%);
+      }
+      &__card{
+         width: 370px;
+         padding: 3rem 2rem;
+         border-radius: 4rem;
+      }
+   }
+}
