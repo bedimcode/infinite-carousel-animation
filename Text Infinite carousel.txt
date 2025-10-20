@@ -1,0 +1,13 @@
+========== INFINITE CAROUSEL ==========
+.carousel__name
+Derloz Lill
+Alexa Hants
+Milar Xans
+Devy Lots
+
+.carousel__number
+5.0
+
+.carousel__description - p
+The company offers many easy-to-use services, with 
+hard work and round-the-clock support on all projects.
